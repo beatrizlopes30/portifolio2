@@ -9,12 +9,9 @@
 :root {
     --primary-color: #6c63ff;
     --secondary-color: #4a42e8;
-    --dark-color: #333;
-    --light-color: #f8f9fa;
     --gray-color: #6c757d;
     --success-color: #28a745;
     --error-color: #dc3545;
-    --info-color: #17a2b8;
 }
 
 body {
@@ -182,7 +179,6 @@ header .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-bottom: 40px;
 }
 
 .article-card {
@@ -226,7 +222,7 @@ header .container {
     background-color: #f8f9fa;
 }
 
-.projects-grid {
+.projects-grid, .articles-grid  {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -597,7 +593,7 @@ body.dark-mode {
     background-color: #1e1e1e;
 }
 
-.skills-container {
+.skills-container{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

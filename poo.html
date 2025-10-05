@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO com Java</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/mouse.ico" type="image/x-icon">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>{Ana Beatriz}</h1>
+                <p>POO COM JAVA</p>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="mobile-menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<section class="articles-expanded">
+    <div class="container">
+        
+        <article class="article-full">
+            <div class="article-header">
+                <h3>PROGRAMAÇÃO ORIENTADA A OBJETOS COM JAVA: CONCEITOS FUNDAMENTAIS</h3>
+                <div class="article-meta">
+                    <span><i class="fas fa-tags"></i> Java, POO, Programação</span>
+                </div>
+            </div>
+            
+            <div class="article-content">
+                <p>A Programação Orientada a Objetos (POO) em Java é um paradigma que organiza o software em torno de objetos, que são instâncias de classes. Esses objetos possuem atributos (dados) e métodos (comportamentos). Java é uma linguagem fortemente baseada em POO, e seus principais conceitos são:</p>
+                
+                <h4>1. Os Quatro Pilares da POO</h4>
+                
+                <h5>1. Encapsulamento</h5>
+                <ul>
+                    <li>Esconde os detalhes internos de um objeto, expondo apenas o necessário.</li>
+                    <li>Atributos são geralmente privados, e o acesso é controlado por getters e setters.</li>
+                    <li>Exemplo: Uma conta bancária não permite alterar o saldo diretamente, apenas por métodos como depositar() e sacar().</li>
+                </ul>
+                
+                <h5>2. Herança</h5>
+                <ul>
+                    <li>Permite que uma classe (subclasse) herde atributos e métodos de outra (superclasse).</li>
+                    <li>Promove reutilização de código.</li>
+                    <li>Exemplo: Carro e Moto podem herdar de Veículo (que tem atributos como marca e ano).</li>
+                </ul>
+                
+                <h5>3. Polimorfismo</h5>
+                <ul>
+                    <li>Um objeto pode se comportar de diferentes formas dependendo do contexto.</li>
+                    <li>Sobrescrita (Override): Uma subclasse redefine um método da superclasse.</li>
+                    <li>Sobrecarga (Overload): Várias versões de um método com parâmetros diferentes.</li>
+                    <li>Exemplo: Um método emitirSom() pode ser diferente para Cachorro ("Au au!") e Gato ("Miau!").</li>
+                </ul>
+                
+                <h5>4. Abstração</h5>
+                <ul>
+                    <li>Foca no essencial, ignorando detalhes desnecessários.</li>
+                    <li>Classes abstratas não podem ser instanciadas, apenas herdadas.</li>
+                    <li>Interfaces definem contratos (o que uma classe deve fazer, mas não como).</li>
+                    <li>Exemplo: Uma FormaGeometrica pode ter um método calcularArea(), mas cada forma (como Círculo ou Quadrado) implementa de forma diferente.</li>
+                </ul>
+                
+                <h4>2. Elementos Principais da POO em Java</h4>
+                
+                <h5>Classes e Objetos</h5>
+                <ul>
+                    <li>Classe: Modelo/planta que define atributos e métodos.</li>
+                    <li>Objeto: Instância concreta de uma classe (ex: Carro meuCarro = new Carro()).</li>
+                </ul>
+                
+                <h5>Construtores</h5>
+                <ul>
+                    <li>Métodos especiais que inicializam objetos quando são criados.</li>
+                    <li>Podem ter diferentes versões (sobrecarga de construtores).</li>
+                </ul>
+                
+                <h5>Modificadores de Acesso</h5>
+                <ul>
+                    <li>public: Acesso livre.</li>
+                    <li>private: Acesso apenas dentro da classe.</li>
+                    <li>protected: Acesso dentro do pacote e subclasses.</li>
+                    <li>(Sem modificador): Acesso apenas dentro do pacote.</li>
+                </ul>
+                
+                <h5>Getters e Setters</h5>
+                <ul>
+                    <li>Padrão para controlar acesso a atributos privados.</li>
+                    <li>Exemplo: getNome() retorna o nome, setNome(String nome) altera o nome.</li>
+                </ul>
+                
+                <h5>Métodos Estáticos</h5>
+                <ul>
+                    <li>Pertencem à classe, não ao objeto (ex: Math.sqrt()).</li>
+                </ul>
+                
+                <h4>3. Conceitos Avançados</h4>
+                
+                <h5>Interfaces</h5>
+                <ul>
+                    <li>Definem o que uma classe deve fazer, mas não como.</li>
+                    <li>Uma classe pode implementar várias interfaces.</li>
+                    <li>Exemplo: Autenticavel pode exigir um método autenticar().</li>
+                </ul>
+                
+                <h5>Classes Abstratas</h5>
+                <ul>
+                    <li>Não podem ser instanciadas, apenas herdadas.</li>
+                    <li>Podem ter métodos abstratos (sem implementação) e concretos.</li>
+                </ul>
+                
+                <h5>Tratamento de Exceções</h5>
+                <ul>
+                    <li>try-catch-finally lida com erros de forma controlada.</li>
+                </ul>
+                
+                <h5>Classes e Métodos final</h5>
+                <ul>
+                    <li>final em classe: Não pode ser herdada (ex: String).</li>
+                    <li>final em método: Não pode ser sobrescrito.</li>
+                </ul>
+                
+                <h4>4. Boas Práticas em POO com Java</h4>
+                <ul class="best-practices">
+                    <li><i class="fas fa-check-circle"></i> Princípio da Responsabilidade Única: Cada classe deve ter apenas uma função.</li>
+                    <li><i class="fas fa-check-circle"></i> Encapsulamento Forte: Atributos privados, acesso controlado.</li>
+                    <li><i class="fas fa-check-circle"></i> Prefira Composição em vez de Herança: Mais flexível e evita hierarquias complexas.</li>
+                    <li><i class="fas fa-check-circle"></i> Use Interfaces para Contratos: Melhor que herança múltipla.</li>
+                    <li><i class="fas fa-check-circle"></i> Documente com Javadoc: Facilita a manutenção.</li>
+                </ul>
+                
+                <h4>5. Exemplo Prático (em palavras)</h4>
+                <p>Imagine um sistema bancário:</p>
+                <ul>
+                    <li>Classe ContaBancaria (atributos: saldo, titular; métodos: depositar(), sacar()).</li>
+                    <li>Subclasse ContaCorrente (herda ContaBancaria e adiciona limiteChequeEspecial).</li>
+                    <li>Interface Tributavel (exige método calcularImposto()).</li>
+                    <li>Polimorfismo: Um objeto ContaBancaria pode ser tanto ContaCorrente quanto ContaPoupanca.</li>
+                </ul>
+                
+                <p>A POO em Java ajuda a criar sistemas modulares, reutilizáveis e de fácil manutenção. Dominar encapsulamento, herança, polimorfismo e abstração é essencial para desenvolver software robusto e escalável.</p>
+            </div>
+            
+            <div class="article-footer">
+            <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Voltar para o portfólio</a>
+            <a href="exparticles.html" class="btn"><i class="fas fa-arrow-right"></i> Ir para outros artigos</a>
+            </div>
+        </article>       
+    </div>
+</section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ana Beatriz. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/dark-mode.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

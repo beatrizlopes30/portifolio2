@@ -260,12 +260,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const scrollPosition = window.scrollY;
             
             if (scrollPosition > 50) {
-                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 10px #f1ededff';
+                header.style.background = '#faf2f2ff';
                 header.style.backdropFilter = 'blur(5px)';
             } else {
                 header.style.boxShadow = 'none';
-                header.style.background = '#fff';
+                header.style.background = '#f1ededff';
                 header.style.backdropFilter = 'none';
             }
         },
@@ -397,7 +397,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const searchMatch = !searchTerm || 
                                title.includes(searchTerm) || 
                                excerpt.includes(searchTerm);
-            
             // Mostra/oculta card baseado nos filtros
             if (categoryMatch && searchMatch) {
                 card.style.display = 'flex';

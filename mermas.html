@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/mouse.ico" type="image/mouse.ico">
+    <title>Mermãs Digitais - Galeria</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary-color: #6c63ff;
+            --secondary-color: #4a42e8;
+            --dark-color: #333;
+            --light-color: #f8f9fa;
+            --gray-color: #6c757d;
+            --pink-color: #e83e8c;
+            --purple-color: #6f42c1;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--purple-color), var(--pink-color));
+            color: white;
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        
+        .back-btn:hover {
+            background-color: white;
+            color: var(--purple-color);
+        }
+        
+        .gallery {
+            padding: 60px 0;
+        }
+        
+        .gallery-intro {
+            text-align: center;
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .gallery-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-content {
+            padding: 20px;
+        }
+        
+        .gallery-content h3 {
+            color: var(--purple-color);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .gallery-content p {
+            color: var(--gray-color);
+            margin-bottom: 15px;
+        }
+        
+        .impact-section {
+            background-color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .impact-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .impact-card {
+            background: linear-gradient(135deg, var(--purple-color), var(--pink-color));
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .impact-card i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .impact-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 0 30px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .impact-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mermãs Digitais</h1>
+            <p>Projeto de extensão que visa a inclusão feminina nas áreas STEAM (Ciência, Tecnologia, Engenharia, Artes e Matemática)</p>
+            <a href="index.html" class="back-btn">Voltar para o Portfólio</a>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-intro">
+                <h2>Galeria do Projeto</h2>
+                <p>Conheça um pouco mais sobre as atividades realizadas por mim no projeto Mermãs Digitais.</p>
+            </div>
+            <div class="gallery-grid">
+                 <div class="gallery-item">
+                    <img src="images/reuniao.jpg" alt="Workshop Inicial" class="gallery-image">
+                    <div class="gallery-content">
+                        <h3>Reunião de alinhamento com equipe</h3>
+                        <p>Organização das aulas e ajustes no plano de ensino.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/visitas.jpg" alt="Workshop Inicial" class="gallery-image">
+                    <div class="gallery-content">
+                        <h3>Atuação em escolas</h3>
+                        <p>Visitas às escolas públicas para convidar e inspirar meninas a fazerem parte do nosso projeto.</p>
+                    </div>
+                </div>
+                
+                                <div class="gallery-item">
+                    <img src="images/apostilas.png" alt="Desenvolvimento Web" class="gallery-image">
+                    <div class="gallery-content">
+                        <h3>Produção de materiais</h3>
+                        <p>Movida pelo desejo de desmistificar e incentivar o aprendizado, me dedico a criar materiais exclusivos para meninas. Utilizando o Figma como ferramenta principal, desenvolvo conteúdos com uma linguagem clara e apostilas animadas, cheias de elementos envolventes.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/aula.jpg" alt="Oficina de Robótica" class="gallery-image">
+                    <div class="gallery-content">
+                        <h3>Aula de Lógica de Programação</h3>
+                        <p>Ministrei uma aula completa de lógica de programação, na qual levei às alunas os fundamentos da lógica de programação: eu havia explicado o conceito e os tipos de variáveis, e em seguida aprofundei-me no ensino das estruturas de controle, como os laços de repetição e os desvios condicionais.As participantes têm seu primeiro contato com conceitos de robótica e automação, montando e programando seus primeiros protótipos.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/jogo.png" alt="Apresentação de Projetos" class="gallery-image">
+                    <div class="gallery-content">
+                        <h3>Liderança em Equipe de jogos</h3>
+                        <p>Liderei uma oficina de desenvolvimento de jogos onde, por meio de um game de plataforma criado na Construct 3, inspirei meninas a aprenderem sobre as grandes mulheres da computação, além de ensinar etapas como informática básica, prototipagem e o uso da ferramenta.</p>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-section">
+        <div class="container">
+            <h2>Impacto do Projeto</h2>
+            <p>O Mermãs Digitais já impactou positivamente a vida de centenas de jovens, ampliando suas perspectivas de futuro e carreira.</p>
+            <div class="impact-cards">
+                <div class="impact-card">
+                    <i class="fas fa-female"></i>
+                    <h3>300+</h3>
+                    <p>Jovens impactadas</p>
+                </div>
+                
+                <div class="impact-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>12</h3>
+                    <p>Oficinas realizadas</p>
+                </div>
+</body>
+</html>

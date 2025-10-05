@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beatriz Dev</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="images/mouse.ico" type="image/mouse.ico">
 </head>
 </body>
 
@@ -24,123 +24,60 @@
                 <button class="filter-btn active" data-filter="all">Todos</button>
                 <button class="filter-btn" data-filter="java">Java</button>
                 <button class="filter-btn" data-filter="spring">Spring</button>
-                <button class="filter-btn" data-filter="performance">Performance</button>
-                <button class="filter-btn" data-filter="arquitetura">Arquitetura</button>
+                <button class="filter-btn" data-filter="angular">Angular</button>
+                <button class="filter-btn" data-filter="linux">Linux</button>
                 <button class="filter-btn" data-filter="banco-dados">Banco de Dados</button>
             </div>
         </div>
         
         <!-- Grid de artigos -->
         <div class="articles-grid">
-            <!-- Artigo 1 -->
             <article class="article-card" data-categories="java performance" data-title="Otimizando Consultas JPA">
                 <div class="article-badge">Java</div>
                 <div class="article-image">
-                    <img src="images/articles/jpa-optimization.jpg" alt="Otimizando Consultas JPA">
                 </div>
                 <div class="article-content">
-                    <h3>Otimizando Consultas JPA em Aplicações Java</h3>
-                    <p class="article-excerpt">Descubra técnicas avançadas para melhorar o desempenho de suas consultas JPA e Hibernate em aplicações empresariais.</p>
+                    <h3>Entendendo JAVA com POO</h3>
+                    <p class="article-excerpt">A Programação Orientada a Objetos (POO) em Java é um paradigma que organiza o software em torno de objetos, que são instâncias de classes. Esses objetos possuem atributos (dados) e métodos (comportamentos). Java é uma linguagem fortemente baseada em POO, e seus principais conceitos são...
+
                     <div class="article-meta">
-                        <span><i class="far fa-calendar-alt"></i> 15/05/2023</span>
-                        <span><i class="far fa-clock"></i> 8 min</span>
                     </div>
-                    <a href="articles/jpa-optimization.html" class="read-more">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    <a href="poo.html" class="read-more">Ler Artigo <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
             
-            <!-- Artigo 2 -->
-            <article class="article-card" data-categories="spring arquitetura" data-title="Spring Cloud Microservices">
-                <div class="article-badge">Spring</div>
+            <article class="article-card" data-categories="linux" data-title="Linux x Windows">
+                <div class="article-badge">Linux</div>
                 <div class="article-image">
-                    <img src="images/articles/spring-cloud.jpg" alt="Spring Cloud Microservices">
                 </div>
                 <div class="article-content">
-                    <h3>Padrões de Microsserviços com Spring Cloud</h3>
-                    <p class="article-excerpt">Implementando uma arquitetura de microsserviços resiliente com Spring Cloud, Eureka e Circuit Breaker.</p>
+                    <h3>Windows X Linux</h3>
+<p class="article-excerpt">Windows é ideal para ferramentas como .NET. Já o Linux possui terminal superior, sendo mais eficiente para desenvolvimento, scripts e automação. Cada sistema atende a diferentes necessidades e perfis de desenvolvedores de forma complementar...
                     <div class="article-meta">
-                        <span><i class="far fa-calendar-alt"></i> 22/06/2023</span>
-                        <span><i class="far fa-clock"></i> 12 min</span>
                     </div>
-                    <a href="articles/spring-cloud.html" class="read-more">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    <a href="articlesWL.html" class="read-more">Ler Artigo <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
             
-            <!-- Artigo 3 -->
-            <article class="article-card" data-categories="banco-dados performance" data-title="PostgreSQL Performance">
-                <div class="article-badge">Banco de Dados</div>
+            <article class="article-card" data-categories="java performance" data-title="Otimizando Consultas JPA">
+                <div class="article-badge">Angular</div>
                 <div class="article-image">
-                    <img src="images/articles/postgresql.jpg" alt="PostgreSQL Performance">
                 </div>
                 <div class="article-content">
-                    <h3>Otimização de Consultas em PostgreSQL</h3>
-                    <p class="article-excerpt">Técnicas avançadas de indexação e otimização de queries para melhorar desempenho em bancos PostgreSQL.</p>
+                    <h3>JAVA + ANGULAR</h3>
+                    <p class="article-excerpt">A combinação Java e Angular domina grandes corporações não por modismo, mas por filosofia compartilhada. Ambas as tecnologias oferecem estrutura robusta, tipagem forte e padrões sólidos, ideal para ambientes enterprise que exigem escalabilidade e manutenção a longo prazo...
                     <div class="article-meta">
-                        <span><i class="far fa-calendar-alt"></i> 10/07/2023</span>
-                        <span><i class="far fa-clock"></i> 10 min</span>
                     </div>
-                    <a href="articles/postgresql.html" class="read-more">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    <a href="Angular.html" class="read-more">Ler Artigo <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
             
-            <!-- Artigo 4 -->
-            <article class="article-card" data-categories="java arquitetura" data-title="Design Patterns Java">
-                <div class="article-badge">Java</div>
-                <div class="article-image">
-                    <img src="images/articles/design-patterns.jpg" alt="Design Patterns Java">
-                </div>
-                <div class="article-content">
-                    <h3>Design Patterns na Prática com Java</h3>
-                    <p class="article-excerpt">Implementando os padrões de projeto mais úteis em aplicações Java modernas com exemplos práticos.</p>
-                    <div class="article-meta">
-                        <span><i class="far fa-calendar-alt"></i> 05/08/2023</span>
-                        <span><i class="far fa-clock"></i> 15 min</span>
-                    </div>
-                    <a href="articles/design-patterns.html" class="read-more">Ler Artigo <i class="fas fa-arrow-right"></i></a>
-                </div>
             </article>
             
-            <!-- Artigo 5 -->
-            <article class="article-card" data-categories="spring performance" data-title="Spring Boot Cache">
-                <div class="article-badge">Spring</div>
-                <div class="article-image">
-                    <img src="images/articles/spring-cache.jpg" alt="Spring Boot Cache">
-                </div>
-                <div class="article-content">
-                    <h3>Implementando Cache em Spring Boot</h3>
-                    <p class="article-excerpt">Guia completo para implementação de cache em aplicações Spring Boot usando Redis e Caffeine.</p>
-                    <div class="article-meta">
-                        <span><i class="far fa-calendar-alt"></i> 18/09/2023</span>
-                        <span><i class="far fa-clock"></i> 9 min</span>
-                    </div>
-                    <a href="articles/spring-cache.html" class="read-more">Ler Artigo <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            
-            <!-- Artigo 6 -->
-            <article class="article-card" data-categories="java banco-dados" data-title="JPA Hibernate">
-                <div class="article-badge">Java</div>
-                <div class="article-image">
-                    <img src="images/articles/jpa-hibernate.jpg" alt="JPA e Hibernate">
-                </div>
-                <div class="article-content">
-                    <h3>Melhores Práticas com JPA e Hibernate</h3>
-                    <p class="article-excerpt">Como evitar armadilhas comuns e usar JPA/Hibernate de forma eficiente em projetos reais.</p>
-                    <div class="article-meta">
-                        <span><i class="far fa-calendar-alt"></i> 30/09/2023</span>
-                        <span><i class="far fa-clock"></i> 11 min</span>
-                    </div>
-                    <a href="articles/jpa-hibernate.html" class="read-more">Ler Artigo <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
         </div>
-        
-        <!-- Paginação -->
         <div class="pagination">
             <button class="page-btn active">1</button>
-            <button class="page-btn">2</button>
-            <button class="page-btn">3</button>
-            <button class="page-btn next">Próximo <i class="fas fa-chevron-right"></i></button>
+            <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Voltar para o portfólio</a>
         </div>
     </div>
 </section>
